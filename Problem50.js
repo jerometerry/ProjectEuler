@@ -68,7 +68,7 @@ function getPrimes(sieve) {
 
 var sieve = sieveOfAtkin(1000000);
 var primes = getPrimes(sieve);
-var chainLimit = 601; // found by trial and error
+var chainLimit = 545; // sum of first 546 primes is > 1000000, so at most length of 545
 
 // step by 2, since sum of an even number of primes isn't a prime
 for (var l = chainLimit; l > 2; l-=2) {
